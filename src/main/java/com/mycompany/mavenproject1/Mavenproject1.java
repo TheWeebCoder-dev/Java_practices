@@ -1,7 +1,12 @@
+/*
+Hello welcome to my practices
+*/
+
 
 package com.mycompany.mavenproject1;
 
 import javax.swing.*;
+
 
 
 public class Mavenproject1 {
@@ -14,6 +19,8 @@ public class Mavenproject1 {
         Mywindow.setVisible(true);
         Mywindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
-        
+        Pokemon Chalizard = new Pokemon("Chalizard",36);
+        Chalizard.Reveal();
+      
     }
 }
