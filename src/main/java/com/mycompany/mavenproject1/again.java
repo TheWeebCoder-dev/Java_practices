@@ -15,6 +15,11 @@ boolean bool = true;
 String text = "Hello";
     
 System.out.println(text + "world");
+System.out.println(Integer);
+System.out.println(floating);
+System.out.println(character);
+System.out.println(bool);
+System.out.println(text);
 }   
 
 }
