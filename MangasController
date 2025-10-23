@@ -1,0 +1,23 @@
+package com.example.demo.controllers;
+
+import com.example.demo.models.Manga;
+import com.example.demo.repositories.MangaRepository;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/api/mangas")
+public class MangaController {
+
+    private final MangaRepository mangaRepository;
+
+    public MangaController(MangaRepository mangaRepository) {
+        this.mangaRepository = mangaRepository;
+    }
+
+    @GetMapping
+    public List<Manga> getAllMangas() {
+        return mangaRepository.findAll();
+    }
+}
